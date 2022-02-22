@@ -1,0 +1,23 @@
+{
+  "images" : [
+    {
+      "filename" : "nathan-dumlao-5Hl5reICevY-unsplash.jpeg",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "filename" : "nathan-dumlao-5Hl5reICevY-unsplash@2x.jpeg",
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "filename" : "nathan-dumlao-5Hl5reICevY-unsplash@3x.jpeg",
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

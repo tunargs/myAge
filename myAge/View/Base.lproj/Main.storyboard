@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait" appearance="dark"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Date Picker View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="DatePickerViewController" customModule="myAge" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="nathan-dumlao-5Hl5reICevY-unsplash" translatesAutoresizingMaskIntoConstraints="NO" id="dRu-pK-bK7" customClass="UnsplashImageView" customModule="myAge" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleAspectFit" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="rVR-BG-rpi">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aWi-fB-gZp" userLabel="TopView">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="215.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter your birth date" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t0s-iU-jeg">
+                                                <rect key="frame" x="49.5" y="88.5" width="276" height="39"/>
+                                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="30"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="t0s-iU-jeg" firstAttribute="centerY" secondItem="aWi-fB-gZp" secondAttribute="centerY" id="7oe-ac-6KT"/>
+                                            <constraint firstItem="t0s-iU-jeg" firstAttribute="centerX" secondItem="aWi-fB-gZp" secondAttribute="centerX" id="ltn-uT-m5c"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lJp-7s-okn" userLabel="MiddleView">
+                                        <rect key="frame" x="0.0" y="225.5" width="375" height="216"/>
+                                        <subviews>
+                                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" style="wheels" translatesAutoresizingMaskIntoConstraints="NO" id="UgP-OJ-Mn1">
+                                                <rect key="frame" x="27.5" y="0.0" width="320" height="216"/>
+                                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <locale key="locale" localeIdentifier="en_GB"/>
+                                            </datePicker>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="UgP-OJ-Mn1" firstAttribute="centerY" secondItem="lJp-7s-okn" secondAttribute="centerY" id="0mK-LS-P6m"/>
+                                            <constraint firstItem="UgP-OJ-Mn1" firstAttribute="centerX" secondItem="lJp-7s-okn" secondAttribute="centerX" id="Kfk-YY-mVh"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YlW-ti-erg" userLabel="BottomView">
+                                        <rect key="frame" x="0.0" y="451.5" width="375" height="215.5"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DgZ-Su-jLY">
+                                                <rect key="frame" x="142.5" y="79.5" width="90" height="56"/>
+                                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="40"/>
+                                                <state key="normal" title="Enter">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="enterClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KkF-Xx-7cm"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="DgZ-Su-jLY" firstAttribute="centerX" secondItem="YlW-ti-erg" secondAttribute="centerX" id="9HX-RL-2hA"/>
+                                            <constraint firstItem="DgZ-Su-jLY" firstAttribute="centerY" secondItem="YlW-ti-erg" secondAttribute="centerY" id="aeb-aB-ACV"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="dRu-pK-bK7" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="3bO-8G-UFL"/>
+                            <constraint firstItem="rVR-BG-rpi" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="7PB-Hz-3um"/>
+                            <constraint firstItem="dRu-pK-bK7" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="8yC-Pp-4ly"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="rVR-BG-rpi" secondAttribute="bottom" id="Bu4-ws-VKh"/>
+                            <constraint firstItem="rVR-BG-rpi" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="PsX-Sb-4k3"/>
+                            <constraint firstItem="rVR-BG-rpi" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="XF7-Vj-uwW"/>
+                            <constraint firstItem="dRu-pK-bK7" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="cIJ-nd-gZq"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="dRu-pK-bK7" secondAttribute="bottom" id="mG5-0G-wln"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="backgroundImage" destination="dRu-pK-bK7" id="d3Y-dz-5bJ"/>
+                        <outlet property="datePicker" destination="UgP-OJ-Mn1" id="rle-A0-R6i"/>
+                        <segue destination="AJp-WE-geq" kind="presentation" identifier="goToAgeDisplayer" id="wUI-su-fhJ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="34.782608695652179" y="93.75"/>
+        </scene>
+        <!--Age Displayer View Controller-->
+        <scene sceneID="xLp-2D-sn0">
+            <objects>
+                <viewController id="AJp-WE-geq" customClass="AgeDisplayerViewController" customModule="myAge" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="0Ub-kU-EYj">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="nathan-dumlao-5Hl5reICevY-unsplash" translatesAutoresizingMaskIntoConstraints="NO" id="zwG-Cz-659" customClass="UnsplashImageView" customModule="myAge" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6we-NU-kHG">
+                                <rect key="frame" x="187.5" y="323.5" width="0.0" height="0.0"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="24"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="qVg-NN-5Au"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="zwG-Cz-659" firstAttribute="top" secondItem="qVg-NN-5Au" secondAttribute="top" id="10Y-L3-8G1"/>
+                            <constraint firstItem="6we-NU-kHG" firstAttribute="centerY" secondItem="0Ub-kU-EYj" secondAttribute="centerY" id="9xu-FA-1j1"/>
+                            <constraint firstItem="qVg-NN-5Au" firstAttribute="bottom" secondItem="zwG-Cz-659" secondAttribute="bottom" id="PTO-MS-r5u"/>
+                            <constraint firstItem="zwG-Cz-659" firstAttribute="leading" secondItem="qVg-NN-5Au" secondAttribute="leading" id="Us0-n9-pLg"/>
+                            <constraint firstItem="zwG-Cz-659" firstAttribute="trailing" secondItem="qVg-NN-5Au" secondAttribute="trailing" id="pqZ-7l-Ufm"/>
+                            <constraint firstItem="6we-NU-kHG" firstAttribute="centerX" secondItem="0Ub-kU-EYj" secondAttribute="centerX" id="u9k-UC-Prq"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="ageLabel" destination="6we-NU-kHG" id="8mu-wJ-ZNy"/>
+                        <outlet property="backgroundImage" destination="zwG-Cz-659" id="qGb-5x-DYV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eUj-xK-jX6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="911.20000000000005" y="93.103448275862078"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="nathan-dumlao-5Hl5reICevY-unsplash" width="1040" height="1493"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
